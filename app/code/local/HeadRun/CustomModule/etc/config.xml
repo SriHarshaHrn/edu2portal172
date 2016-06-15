@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<config>
+    <modules>
+        <HeadRun_CustomModule>
+            <version>0.1.0</version>
+        </HeadRun_CustomModule>
+    </modules>
+    <frontend>
+        <routers>
+            <module1>
+                <use>standard</use>
+                <args>
+                    <module>HeadRun_CustomModule</module>
+                    <frontName>module1</frontName>
+                </args>
+            </module1>
+        </routers>
+        <layout>
+            <updates>
+                <HeadRun_CustomModule>
+                    <file>module1.xml</file>
+                </HeadRun_CustomModule>
+            </updates>
+        </layout>
+    </frontend>
+<!--    <global>
+        <models>
+            <CustomModule>
+                <class>HeadRun_CustomModule_Model</class>
+                <resourceModel>CustomModule_mysql4</resourceModel>
+            </CustomModule>
+            <CustomModule_mysql4>
+                <class>HeadRun_CustomModule_Model_Mysql4</class>
+                <entities>
+                    <CustomModule>
+                        <table>CustomModule</table>
+                    </CustomModule>
+                </entities>
+            </CustomModule_mysql4>
+        </models>
+        <resources>
+            <CustomModule_setup>
+                <setup>
+                    <module>HeadRun_CustomModule</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </CustomModule_setup>
+            <CustomModule_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </CustomModule_write>
+            <CustomModule_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </CustomModule_read>
+        </resources>
+        <blocks>
+            <CustomModule>
+                <class>HeadRun_CustomModule_Block</class>
+            </CustomModule>
+        </blocks>
+        <helpers>
+            <CustomModule>
+                <class>HeadRun_CustomModule_Helper</class>
+            </CustomModule>
+        </helpers>
+    </global>-->
+</config>
