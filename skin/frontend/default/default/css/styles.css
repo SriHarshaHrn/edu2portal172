@@ -1822,3 +1822,19 @@ ul.products-grid li{
 .new-colleges h2.subtitle{
 display: none;
 }
+
+.custom-static-block {
+    margin-top: 30px;
+    width: 300px;
+    min-height: 150px;
+    background-color: lightgray;
+}
+
+.custom-static-block-body {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.custom-static-block-header{
+   padding-left: 10px;
+}

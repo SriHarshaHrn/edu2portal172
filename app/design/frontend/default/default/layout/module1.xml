@@ -10,7 +10,7 @@ and open the template in the editor.
     <module1_index_index>
         <reference name="root">
             <action method="setTemplate">
-                <template>page/1column.phtml</template>
+                <template>page/3columns.phtml</template>
             </action>
         </reference>
         <reference name="content">
