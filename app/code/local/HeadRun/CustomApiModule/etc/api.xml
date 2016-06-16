@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<config>
+    <api>
+        <resources>
+            <CustomApiModule_product translate="title" module="CustomApiModule">
+                <model>CustomApiModule/product_api</model>
+                <title>Demo Custommoduleapi API</title>
+                <acl>CustomApiModule/product</acl>
+                <methods>
+                    <list translate="title" module="CustomApiModule">
+                        <title>List of products</title>
+                        <method>items</method>
+                    </list>
+                </methods>
+            </CustomApiModule_product>
+        </resources>
+        <resources_alias>
+            <product>CustomApiModule_product</product>
+        </resources_alias>
+        <v2>
+            <resources_function_prefix>
+                <product>CustomApiModuleProduct</product>
+            </resources_function_prefix>
+        </v2>
+        <acl>
+            <resources>
+                <CustomApiModule translate="title" module="CustomApiModule">
+                    <title>Products</title>
+                    <sort_order>5</sort_order>
+                    <product translate="title" module="CustomApiModule">
+                        <title>Product data</title>
+                    </product>
+                </CustomApiModule>
+            </resources>
+        </acl>
+    </api>
+</config>
