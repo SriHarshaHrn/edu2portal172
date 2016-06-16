@@ -10,11 +10,13 @@ and open the template in the editor.
     <module1_index_index>
         <reference name="root">
             <action method="setTemplate">
-                <template>page/3columns.phtml</template>
+                <template>page/1column.phtml</template>
             </action>
         </reference>
         <reference name="content">
             <block type="core/template" name="module1.mod" template="module1/new.phtml">
+            </block>
+            <block type="core/template" name="custom_block_02" template="customblocks/static-block-02.phtml">
             </block>
         </reference>
     </module1_index_index>
